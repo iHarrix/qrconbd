@@ -48,33 +48,6 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col-12 col-lg mb-3">
-        <ul class="list-style-none d-flex flex-column flex-lg-row flex-wrap m-0">
-            
-            <?php if(settings()->payment->is_enabled): ?>
-                <?php if(\Altum\Plugin::is_active('affiliate') && settings()->affiliate->is_enabled): ?>
-                    <li class="mb-2 mr-lg-3"><a href="<?= url('affiliate') ?>"><?= l('affiliate.menu') ?></a></li>
-                <?php endif ?>
-            <?php endif ?>
-
-            <?php if(settings()->email_notifications->contact && !empty(settings()->email_notifications->emails)): ?>
-                <li class="mb-2 mr-lg-3"><a href="<?= url('contact') ?>"><?= l('contact.menu') ?></a></li>
-            <?php endif ?>
-
-            <?php if(settings()->cookie_consent->is_enabled): ?>
-                <li class="mb-2 mr-lg-3"><a href="#" data-cc="c-settings"><?= l('global.cookie_consent.menu') ?></a></li>
-            <?php endif ?>
-
-            <?php if(count($data->pages)): ?>
-                <?php foreach($data->pages as $row): ?>
-                    <li class="mb-2 mr-lg-3"><a href="<?= $row->url ?>" target="<?= $row->target ?>"><?= $row->title ?></a></li>
-                <?php endforeach ?>
-            <?php endif ?>
-        </ul>
-    </div>
-
-
     <div class="col-12 col-lg-auto">
         <div class="d-flex flex-wrap">
             <?php foreach(require APP_PATH . 'includes/admin_socials.php' as $key => $value): ?>

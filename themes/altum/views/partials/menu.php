@@ -17,14 +17,6 @@
         <div class="collapse navbar-collapse justify-content-end" id="main_navbar">
             <ul class="navbar-nav">
 
-                <?php if(\Altum\Authentication::check() || (!\Altum\Authentication::check() && settings()->plan_guest->status)): ?>
-                    <li class="nav-item"><a class="nav-link" href="<?= url('qr') ?>"><?= l('qr.menu') ?></a></li>
-
-                    <?php if(settings()->links->qr_code_reader_is_enabled): ?>
-                    <li class="nav-item"><a class="nav-link" href="<?= url('qr-reader') ?>"><?= l('qr_reader.menu') ?></a></li>
-                    <?php endif ?>
-                <?php endif ?>
-
                 <?php foreach($data->pages as $data): ?>
                     <li class="nav-item"><a class="nav-link" href="<?= $data->url ?>" target="<?= $data->target ?>"><?= $data->title ?></a></li>
                 <?php endforeach ?>
