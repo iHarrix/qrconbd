@@ -1,0 +1,7 @@
+[30-Jan-2024 16:35:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\qrconbd\app\core\Database.php:19
+Stack trace:
+#0 C:\xampp\htdocs\qrconbd\app\core\Database.php(19): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'ixocakuy_codigo...')
+#1 C:\xampp\htdocs\qrconbd\app\core\App.php(20): Altum\Database::initialize()
+#2 C:\xampp\htdocs\qrconbd\index.php(20): Altum\App->__construct()
+#3 {main}
+  thrown in C:\xampp\htdocs\qrconbd\app\core\Database.php on line 19

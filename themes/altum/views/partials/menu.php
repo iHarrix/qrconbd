@@ -68,7 +68,7 @@
                 <?php else: ?>
 
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="<?= url('login') ?>">
+                        <a class="nav-link text-primary" href="<?=url('login')?>">
                             <i class="fa fa-sign-in-alt fa-fw fa-sm mr-2"></i>
                             <?= l('login.menu') ?>
                         </a>

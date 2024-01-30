@@ -350,7 +350,7 @@ return [
 
 'admin_index.title' => 'Panel de administración',
 'admin_index.menu' => 'Panel de control',
-'admin_index.header' => 'Bienvenido de nuevo, %s 👋',
+'admin_index.header' => 'Bienvenido de nuevo 👋',
 'admin_index.support.inactive' => 'Ya no eres elegible para recibir soporte. %sExtiende tu soporte%s ahora.',
 'admin_index.users' => 'Usuarios recientes',
 'admin_index.payments' => 'Pagos recientes',
